@@ -33,6 +33,7 @@
     <Resources>
         <Resource>openapi://association.json</Resource>
         <Resource>jsc://JS-AddAddress.js</Resource>
+        <Resource>jsc://JS-AddApikeyHeader.js</Resource>
     </Resources>
     <Spec></Spec>
     <TargetServers/>

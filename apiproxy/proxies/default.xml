@@ -14,15 +14,15 @@
         <Response/>
     </PreFlow>
     <Flows>
-        <Flow name="getStoreById">
-            <Description>Get a specific store</Description>
+        <Flow name="getApod">
+            <Description>Get information about a planetary apod</Description>
             <Request>
                 <Step>
-                    <Name>JS-AddAddress</Name>
+                    <Name>JS-AddApikeyHeader</Name>
                 </Step>
             </Request>
             <Response/>
-            <Condition>(proxy.pathsuffix MatchesPath "/stores/*") and (request.verb = "GET")</Condition>
+            <Condition>(proxy.pathsuffix MatchesPath "/apod/*") and (request.verb = "GET")</Condition>
         </Flow>
         <Flow name="404NotFound">
             <Description/>

@@ -11,8 +11,8 @@
     </PostFlow>
     <HTTPTargetConnection>
         <LoadBalancer>
-            <Server name="TS-Reetail"/>
+            <Server name="TS-Nasa"/>
         </LoadBalancer>
-        <Path>/training/db</Path>
+        <Path>/planetary</Path>
     </HTTPTargetConnection>
 </TargetEndpoint>
