@@ -17,6 +17,5 @@
         <LoadBalancer>
             <Server name="TS-Nasa"/>
         </LoadBalancer>
-        <Path>/planetary</Path>
     </HTTPTargetConnection>
 </TargetEndpoint>
