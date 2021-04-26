@@ -1,0 +1,12 @@
+[
+    {
+        "name": "${proxy.name}-settings",
+        "encrypted": false,
+        "entry":[
+            {
+                "name": "target.auth-token",
+                "value": "${env.PROXY_AUTH_TOKEN}"
+            }
+        ]
+    }
+]

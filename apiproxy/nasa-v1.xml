@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="10" name="nasa-v1">
+    <Basepaths>/nasa/v1</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1617729574565</CreatedAt>
+    <CreatedBy>eceledonio@nearbpo.com</CreatedBy>
+    <Description>/nasa/v1</Description>
+    <DisplayName>nasa-v1</DisplayName>
+    <LastModifiedAt>1618528171233</LastModifiedAt>
+    <LastModifiedBy>eceledonio@nearbpo.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:997767c984dcdfb7566683e372c12464fa501f58d9c1ccaea50c3951e930e2002747848e778617b143a09847d4991a8a1ea2620b071f2369776aa534bf79fd30:us-east-1</ManifestVersion>
+    <Policies>
+        <Policy>AM-400JSONThreat</Policy>
+        <Policy>AM-RemoveAuth</Policy>
+        <Policy>BA-AddAuthHeader</Policy>
+        <Policy>EV-DebugBasicAuth</Policy>
+        <Policy>EV-ExtractAddress</Policy>
+        <Policy>EV-ExtractLatLng</Policy>
+        <Policy>FC-BackendCredentials</Policy>
+        <Policy>J2X-Convert</Policy>
+        <Policy>JS-AddAddress</Policy>
+        <Policy>JTP-Protect</Policy>
+        <Policy>KVM-GetCredentials</Policy>
+        <Policy>O2-VerifyToken</Policy>
+        <Policy>RF-404NotFound</Policy>
+        <Policy>RF-InvalidContentType</Policy>
+        <Policy>SC-GoogleGeocode</Policy>
+        <Policy>VAK-VerifyKey</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>openapi://association.json</Resource>
+        <Resource>jsc://JS-AddAddress.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>
