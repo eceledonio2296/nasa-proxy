@@ -16,13 +16,9 @@
     <Flows>
         <Flow name="getApod">
             <Description>Get information about a planetary apod</Description>
-            <Request>
-                <Step>
-                    <Name>JS-AddApikeyHeader</Name>
-                </Step>
-            </Request>
+            <Request/>
             <Response/>
-            <Condition>(proxy.pathsuffix MatchesPath "/apod/*") and (request.verb = "GET")</Condition>
+            <Condition>(proxy.pathsuffix MatchesPath "/apod") and (request.verb = "GET")</Condition>
         </Flow>
         <Flow name="404NotFound">
             <Description/>
